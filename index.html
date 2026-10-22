@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Consulta de CEP utilizando a API ViaCEP">
+    <title>Consulta de CEP</title>
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-box">
+        <h1>Consultar CEP</h1>
+
+        <label class="cep">CEP</label>
+        <input type="text" id="cep" placeholder="Apenas números (ex:59000000)" maxlength="8">
+        <span id="notice" class="loading"></span>
+
+        <label for="street">Rua:</label>
+        <input type="text" id="street" readonly>
+
+        <label for="district">Bairro:</label>
+        <input type="text" id="district" readonly>
+
+        <label for="city">Cidade:</label>
+        <input type="text" id="city" readonly>
+
+        <label for="state">Estado(UF):</label>
+        <input type="text" id="state" readonly>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
